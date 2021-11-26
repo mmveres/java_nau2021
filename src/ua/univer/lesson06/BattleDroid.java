@@ -69,7 +69,7 @@ public class BattleDroid extends Droid implements BattleDroidControllable {
 
     }
 
-    @Override
+
     void show() {
 
     }
