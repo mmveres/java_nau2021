@@ -57,29 +57,29 @@ public class Controller {
         return sc.nextInt();
     }
 
-   public int inputIntValueWithScannerAndDiapason(Scanner sc) {
-        int res=0;
-        view.printMessage(view.INPUT_INT_DATA +
-                model.getMinBarrier() + model.getMaxBarrier());
-
-        while( true ) {
-            // check int - value
-            while (!sc.hasNextInt()) {
-                view.printMessage(view.WRONG_INPUT_DATA
-                        + view.INPUT_INT_DATA);
-                sc.next();
-            }
-            // check value in diapason
-            if ((res = sc.nextInt()) <= model.getMinBarrier() ||
-                    res >= model.getMaxBarrier()) {
-                view.printMessage(view.WRONG_RANGE_DATA
-                        + View.INPUT_INT_DATA);
-                continue ;
-            }
-            break;
-        }
-        return res;
-    }
+//   public int inputIntValueWithScannerAndDiapason(Scanner sc) {
+//        int res=0;
+//        view.printMessage(view.INPUT_INT_DATA +
+//                model.getMinBarrier() + model.getMaxBarrier());
+//
+//        while( true ) {
+//            // check int - value
+//            while (!sc.hasNextInt()) {
+//                view.printMessage(view.WRONG_INPUT_DATA
+//                        + view.INPUT_INT_DATA);
+//                sc.next();
+//            }
+//            // check value in diapason
+//            if ((res = sc.nextInt()) <= model.getMinBarrier() ||
+//                    res >= model.getMaxBarrier()) {
+//                view.printMessage(view.WRONG_RANGE_DATA
+//                        + View.INPUT_INT_DATA);
+//                continue ;
+//            }
+//            break;
+//        }
+//        return res;
+//    }
 
 
 }
