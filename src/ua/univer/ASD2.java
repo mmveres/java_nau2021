@@ -70,12 +70,12 @@ class BinaryTree {
 
             if (node.left != null && node.value < node.left.value&&!stop)
                 if (node.right == null || (node.right != null && node.left.value < node.right.value))
-            traverseInOrder(node.left);
+            traverseInOrderABC(node.left);
             if(!stop)System.out.print(" " + node.value);
 
             if (node.right != null && node.value < node.right.value&&!stop)
                 if (node.left == null || (node.left != null && node.right.value < node.left.value))
-            traverseInOrder(node.right);
+            traverseInOrderABC(node.right);
 
 
         }
