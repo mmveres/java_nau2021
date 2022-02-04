@@ -78,7 +78,7 @@ public class Droid implements Serializable {
 
     @Override
     public String toString() {
-        return "Droid{" +
+        return "\nDroid{" +
                 "name='" + name + '\'' +
                 ", armorAmount=" + armorAmount +
                 ", weaponsAmount=" + weaponsAmount +
